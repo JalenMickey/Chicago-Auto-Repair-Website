@@ -6,8 +6,9 @@ function GoogleSection() {
     return (
         <div className='google'>
             <div className='google-container'>
-            <h2>Google Customer Reviews</h2>
             <img src="/images/shop_rating.jpg" alt="rating"/>
+            <h2>Google Customer Reviews</h2>
+            
             <div className='review'>
                 <p className='review-text'>
                 Had my car serviced here twice so far! Happy both times.

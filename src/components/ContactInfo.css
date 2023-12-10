@@ -1,0 +1,18 @@
+
+
+.contact-info {
+    color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        font-size: 20px;
+    }
+}
