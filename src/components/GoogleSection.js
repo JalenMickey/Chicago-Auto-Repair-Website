@@ -12,12 +12,11 @@ function GoogleSection() {
             <div className='review'>
                 <p className='review-text'>
                 Had my car serviced here twice so far! Happy both times.
-                <ul>
-                    <li>Clean, cute spot</li>
-                    <li>Staff members are very informative, helpful, and polite</li>
-                    <li>Estimate and approval process is streamlined by tech, with at-a-glance views and more details/photos accessible by clicking through</li>
-                    <li>Reasonable pricing & they’re not pushy ♡</li>
-                </ul>
+                Clean, cute spot<br/>
+                Staff members are very informative, helpful, and polite<br/>
+                Estimate and approval process is streamlined by tech, with at-a-glance views and more details/photos accessible by clicking through<br/>
+                Reasonable pricing & they’re not pushy ♡<br/>
+                
                 They get the work done pretty fast, and as far as I can tell, done right! Very grateful to have a mechanic in the neighborhood that I actually trust.
                 <br />
                 Thank you C.A.R. ! (Oh, I see what they did there… 😄)

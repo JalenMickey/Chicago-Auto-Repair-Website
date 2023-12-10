@@ -1,7 +1,7 @@
 
 
 .contact-info {
-    color: white;
+    color: red;
     display:flex;
     flex-direction:column;
     justify-content:left;
@@ -15,4 +15,8 @@
     .contact-info {
         font-size: 20px;
     }
+}
+
+.contact-address {
+    color: red;
 }
