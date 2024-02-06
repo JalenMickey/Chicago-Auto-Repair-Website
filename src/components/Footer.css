@@ -1,0 +1,57 @@
+/* Footer.css */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-hours, .footer-social {
+    flex: 1;
+  }
+
+  .footer-subscribe input[type="email"] {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 300px; /* Set the maximum width as needed */
+  }
+  
+  .footer-hours p {
+    margin: 10px 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-buttons {
+    margin-top: 10px;
+  }
+  
+  .social-buttons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-buttons a:hover {
+    color: #3498db; /* Change the color on hover if desired */
+  }
+
+  @media screen and (max-width: 760px){
+    .footer-hours, .footer-subscribe, .footer-social {
+        font-size: 12px;
+    }
+  }
+  

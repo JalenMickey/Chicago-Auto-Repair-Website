@@ -4,17 +4,13 @@ import { Button } from './Button';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
-// ... (previous imports)
-
-// ... (previous imports)
-
-// ... (previous imports)
-
 function ContactForm() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [recaptchaVerified, setRecaptchaVerified] = useState(false);
   const [attemptedSubmission, setAttemptedSubmission] = useState(false);
   const [emptyFieldError, setEmptyFieldError] = useState(false);
+  const [selectedContactMethod, setSelectedContactMethod] = useState('');
+  const [selectedService, setSelectedService] = useState('');
   const form = useRef();
   const recaptchaRef = useRef();
 
@@ -31,14 +27,14 @@ function ContactForm() {
     const requiredFields = ['user_name', 'user_email', 'user_number', 'message'];
     const isEmptyField = requiredFields.some((fieldName) => !form.current[fieldName].value.trim());
 
-    if (isEmptyField) {
+    if (isEmptyField || !selectedContactMethod || !selectedService) {
       console.log('One or more fields are empty');
       setEmptyFieldError(true);
       setAttemptedSubmission(true);
       return;
     }
 
-    emailjs.sendForm('service_bnue848', 'template_5n46e07', form.current, 'rytfGePAZdJV_sy98')
+    emailjs.sendForm('service_bnue848', 'template_ndt3tu8', form.current, 'rytfGePAZdJV_sy98')
       .then((result) => {
         console.log(result.text);
         setFormSubmitted(true);
@@ -70,7 +66,46 @@ function ContactForm() {
           <input type="text" placeholder="Full Name" name="user_name" required />
           <input type="text" placeholder="Email" name="user_email" required />
           <input type="text" placeholder="Phone Number" name="user_number" required />
-          <textarea name="message" cols="10" rows="10"></textarea>
+          <div className="select-contact-method">
+            <p>Select Preferred Contact Method</p>
+            <select
+              name="contact_method"
+              value={selectedContactMethod}
+              onChange={(e) => setSelectedContactMethod(e.target.value)}
+              required
+            >
+              <option value="">Select Contact Method</option>
+              <option value="phoneCall">Phone Call</option>
+              <option value="textMessage">Text Message</option>
+              <option value="email">Email</option>
+            </select>
+          </div>
+          <div className="contact-car-info">
+            <p>Please enter your car's make and model.</p>
+            <input type="text" placeholder="Make" name="user_make" required />
+            <input type="text" placeholder="Model" name="user_model" required />
+          </div>
+          <div className="select-service">
+            <p>Select Your Service</p>
+            <select
+              name="service"
+              value={selectedService}
+              onChange={(e) => setSelectedService(e.target.value)}
+              required
+            >
+              <option value="">Select Service</option>
+              <option value="performance">Performance</option>
+              <option value="service">Service</option>
+              <option value="repair">Repair</option>
+              <option value="collision & paint">Collision & Paint</option>
+              <option value="suspension">Suspension</option>
+              <option value="wraps">Wraps</option>
+              <option value="wheels">Wheels</option>
+              <option value="carbon fiber">Carbon Fiber</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <textarea name="message" placeholder="If selected 'other', please specify with detail. You can also include any extra information here." cols="10" rows="10"></textarea>
 
           {attemptedSubmission && emptyFieldError && (
             <p className="error-message">Please fill in all required fields before submitting the form.</p>
@@ -96,5 +131,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
-

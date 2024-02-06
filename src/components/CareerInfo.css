@@ -1,0 +1,30 @@
+.career-image {
+    align-self: center;
+    max-width: 100%;
+    width: auto;
+    
+}
+
+.career-container p {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.career-text {
+    color: white;
+    text-align: center;
+}
+
+.career-text p {
+    color: white;
+    padding: 15px;
+    font-size: 28px;
+}
+
+.career-text ul {
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #333;
+    border-radius: 8px;
+}

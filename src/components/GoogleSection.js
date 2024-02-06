@@ -6,7 +6,7 @@ function GoogleSection() {
     return (
         <div className='google'>
             <div className='google-container'>
-            <img src="/images/shop_rating.jpg" alt="rating"/>
+            <h1>4.8 <br/>⭐️⭐️⭐️⭐️⭐️</h1>
             <h2>Google Customer Reviews</h2>
             
             <div className='review'>

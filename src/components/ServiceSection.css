@@ -1,0 +1,36 @@
+.services-container {
+    display: flex;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    padding: auto;
+  }
+  
+  .services-container h2 {
+    font-size: 40px;
+    text-align: center;
+    color: red;
+  }
+  
+  .services-text ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    border-radius: 3%;
+    margin-top: 20px;
+    max-width: 800px; /* Limit the width of the list */
+    margin: 0 auto; /* Center the list horizontally */
+    font-size: 24px;
+  }
+  
+  .services-text ul li {
+    margin-bottom: 10px;
+  }
+  
+  .services-text p {
+    font-size: 24px;
+    margin-top: 20px;
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+  }
+  

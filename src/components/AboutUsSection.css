@@ -1,0 +1,57 @@
+
+
+.about-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-image {
+    
+    align-self: center;
+    max-width: 100%;
+    width: auto;
+}
+
+.about-info {
+    flex:1;
+}
+
+.about-container h1 {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-intro,
+.about-body,
+.about-conclusion {
+    color:white;
+    text-align:center;
+    font-size: 24px;
+}
+
+.about-conclusion {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column-reverse; /* Change to column for smaller screens */
+        text-align: center;
+    }
+
+    .about-image {
+        order: 1; /* Move the image below the text for smaller screens */
+        margin-top: 20px; /* Add some spacing between text and image */
+    }
+
+    .about-intro,
+    .about-body,
+    .about-conclusion {
+        color:white;
+        text-align:center;
+        font-size: 18px;
+    }
+}

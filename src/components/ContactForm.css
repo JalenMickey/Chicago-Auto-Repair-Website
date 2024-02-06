@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width:200px; /* Adjust the maximum width as needed */
     width: 100%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -37,4 +37,12 @@
     color: red;
     text-align: center;
   }
-  
+
+.select-contact-method p{
+  font-size: 20px;
+  color: white;
+}
+
+.select-contact-method select{
+  align-items: center;
+}

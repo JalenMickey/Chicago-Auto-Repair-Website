@@ -1,0 +1,48 @@
+.--text-center{
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .--form-control--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+.--form-control--card input,
+.--form-control--card textarea {
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.container .success-message {
+    color: white;
+    text-align:center;
+    margin-top: 10px;
+  }
+
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+
+.file-upload {
+    color: white;
+}
+
+.file-upload input{
+    color: white;
+}
+  
