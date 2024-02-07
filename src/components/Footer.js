@@ -23,7 +23,7 @@ function Footer() {
     }
 
     // Perform the emailJS API call to send the subscription email
-    emailjs.sendForm('service_bnue848', 'template_khbqdxo', form.current, 'rytfGePAZdJV_sy98')
+    emailjs.sendForm('service_ihs8ixp', 'template_khbqdxo', form.current, 'luAOihhQu1NYdfZ2M')
       .then((result) => {
         console.log(result.text);
         setFormSubmitted(true);

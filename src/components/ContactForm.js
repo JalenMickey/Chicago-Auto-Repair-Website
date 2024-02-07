@@ -34,7 +34,7 @@ function ContactForm() {
       return;
     }
 
-    emailjs.sendForm('service_bnue848', 'template_ndt3tu8', form.current, 'rytfGePAZdJV_sy98')
+    emailjs.sendForm('service_ihs8ixp', 'template_ndt3tu8', form.current, 'luAOihhQu1NYdfZ2M')
       .then((result) => {
         console.log(result.text);
         setFormSubmitted(true);

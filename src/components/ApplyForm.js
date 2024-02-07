@@ -9,13 +9,9 @@ function ApplyForm() {
   const [recaptchaVerified, setRecaptchaVerified] = useState(false);
   const [attemptedSubmission, setAttemptedSubmission] = useState(false);
   const [emptyFieldError, setEmptyFieldError] = useState(false);
-  const [selectedFile, setSelectedFile] = useState(null);
   const form = useRef();
   const recaptchaRef = useRef();
 
-  const handleFileChange = (e) => {
-    setSelectedFile(e.target.files[0]);
-  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -37,7 +33,7 @@ function ApplyForm() {
       return;
     }
 
-    emailjs.sendForm('service_bnue848', 'template_5n46e07', form.current, 'rytfGePAZdJV_sy98')
+    emailjs.sendForm('service_ihs8ixp', 'template_5n46e07', form.current, 'luAOihhQu1NYdfZ2M')
       .then((result) => {
         console.log(result.text);
         setFormSubmitted(true);
@@ -64,7 +60,7 @@ function ApplyForm() {
   return (
     <section>
       <div className="container">
-        <h2 className="--text-center">Contact Us</h2>
+        <h2 className="--text-center">Join The Team</h2>
         <form className="--form-control--card" ref={form}>
           <input type="text" placeholder="Full Name" name="user_name" required />
           <input type="text" placeholder="Email" name="user_email" required />
@@ -72,7 +68,7 @@ function ApplyForm() {
           <textarea name="message" cols="10" rows="10"></textarea>
           <div className="file-upload">
             <p>Attach PDF or Word document (optional)</p>
-            <input type="file" name="user_attachment" accept=".pdf,.docx" onChange={handleFileChange} />
+            <input type="file" name="user_attachment" />
           </div>
 
           {attemptedSubmission && emptyFieldError && (
