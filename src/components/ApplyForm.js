@@ -65,7 +65,7 @@ function ApplyForm() {
           <input type="text" placeholder="Full Name" name="user_name" required />
           <input type="text" placeholder="Email" name="user_email" required />
           <input type="text" placeholder="Phone Number" name="user_number" required />
-          <textarea name="message" cols="10" rows="10"></textarea>
+          <textarea name="message" placeholder="Tell us about yourself..." cols="10" rows="10" style={{ width: '80%' }}></textarea>
           <div className="file-upload">
             <p>Attach PDF or Word document (optional)</p>
             <input type="file" name="user_attachment" />

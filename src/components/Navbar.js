@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import ContactInfo from './ContactInfo'; // Import ContactInfo component
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -27,6 +28,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+        <ContactInfo /> {/* Include ContactInfo component */}
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src='/images/test.svg' alt='logo' />
@@ -41,39 +43,22 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/about-us'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
                 About Us
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/careers'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/careers' className='nav-links' onClick={closeMobileMenu}>
                 Careers
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/faqs'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/faqs' className='nav-links' onClick={closeMobileMenu}>
                 FAQs
               </Link>
             </li>
-
             <li>
-              <Link
-                to='/contact-us'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>

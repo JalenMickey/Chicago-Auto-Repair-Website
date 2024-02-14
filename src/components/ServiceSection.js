@@ -5,9 +5,8 @@ import './ServiceSection.css';
 function ServiceSection() {
   return (
     <div className="services-container">
-    <h2>Our Services</h2>
       <img src='/images/services-photo.png' alt="Car" className="car-image" />
-      
+      <h2>Our Services</h2>
       <div className="services-text">
         <p>We offer a wide range of automotive services to keep your vehicle running smoothly. Here are some of the services we provide:</p>
 

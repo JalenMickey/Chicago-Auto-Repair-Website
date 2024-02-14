@@ -67,7 +67,6 @@ function ContactForm() {
           <input type="text" placeholder="Email" name="user_email" required />
           <input type="text" placeholder="Phone Number" name="user_number" required />
           <div className="select-contact-method">
-            <p>Select Preferred Contact Method</p>
             <select
               name="contact_method"
               value={selectedContactMethod}
@@ -81,7 +80,6 @@ function ContactForm() {
             </select>
           </div>
           <div className="contact-car-info">
-            <p>Please enter your car's make and model.</p>
             <input type="text" placeholder="Make" name="user_make" required />
             <input type="text" placeholder="Model" name="user_model" required />
           </div>
@@ -105,7 +103,7 @@ function ContactForm() {
               <option value="other">Other</option>
             </select>
           </div>
-          <textarea name="message" placeholder="If selected 'other', please specify with detail. You can also include any extra information here." cols="10" rows="10"></textarea>
+          <textarea name="message" style={{ width: '90%' }} placeholder="If selected 'other', please specify with detail. You can also include any extra information here." cols="6" rows="6"></textarea>
 
           {attemptedSubmission && emptyFieldError && (
             <p className="error-message">Please fill in all required fields before submitting the form.</p>

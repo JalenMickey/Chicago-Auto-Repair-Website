@@ -3,24 +3,23 @@
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust the height as needed */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Adjust the height as needed */
+}
   
-  .--form-control--card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width:200px; /* Adjust the maximum width as needed */
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-  
+.--form-control--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:200px; /* Adjust the maximum width as needed */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .--form-control--card input,
 .--form-control--card textarea {
     margin-bottom: 30px;
@@ -39,10 +38,49 @@
   }
 
 .select-contact-method p{
-  font-size: 20px;
+  font-size: 16px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.contact-car-info {
+  padding-top: 20px;
   color: white;
 }
 
+.contact-car-info p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-car-info input [type="text"] {
+  width: 50%;
+  max-width: none;
+}
 .select-contact-method select{
   align-items: center;
+}
+
+.select-service {
+  padding-bottom: 20px;
+}
+
+/* Add this CSS inside your existing media query */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  /* Adjust the width of input boxes and selects for smaller screens */
+  .--form-control--card input[type="text"],
+  .--form-control--card textarea {
+    width: 45%; /* Adjust width as needed */
+    max-width: none; /* Remove max-width restriction */
+    margin-bottom: 10px; /* Add spacing between input boxes and selects */
+  }
+
+  .--form-control--card select {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
 }

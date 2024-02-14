@@ -2,71 +2,47 @@
 
 .contact-info {
     color: red;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-size: 26px;
-    width:100%
-  }
-  
-  a.link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  .contact-address {
-    color: #ec131b;
-  }
-  
-  .contact-methods {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px; /* Add margin for spacing */
-    margin-right: 200px;
-  }
-  
-  .contact-methods p {
-    margin-bottom: 20px;
-    margin-left: 150px;
-  }
-  
-  .contact-methods label {
-    display: flex;
-    align-items: center;
-    width: max-content; /* Adjust the width based on the longest label */
-    margin-bottom: 5px;
-  }
-  
-  .contact-methods input {
-    margin-right: 10px;
-  }
-
-  .select-service p {
-    color: white;
     
   }
 
-  .contact-car-info p {
+  a:visited  {
+    color:white;
+  }
+  a {
+    color:white;
+  }
+  
+  .contact-address {
     color: white;
-    margin-bottom: 10px;
+    font-size: 14px;
   }
 
-  .select-service select {
-    margin-bottom: 10px;
+  .contact-number {
+    font-size: 14px;
   }
   
   @media screen and (max-width: 768px) {
     .contact-info {
       font-size: 20px;
+      position: absolute;
+      bottom: 0;
+      width:100%;
     }
     .container {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .contact-address {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .contact-number {
+      font-size: 10px;
     }
   }
