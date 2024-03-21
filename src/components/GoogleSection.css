@@ -5,9 +5,7 @@ body, html {
     background: black; /* Set the background color to black */
 }
 
-.google {
-    padding: 4rem;
-}
+
 .google-container {
     position: relative;
     display: flex;
